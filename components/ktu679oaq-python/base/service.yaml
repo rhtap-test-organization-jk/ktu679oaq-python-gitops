@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ktu679oaq-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ktu679oaq-python 
+  name: ktu679oaq-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ktu679oaq-python 
